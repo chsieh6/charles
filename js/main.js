@@ -11,15 +11,15 @@ $(window).scroll(collapseNavbar);
 $(document).ready(collapseNavbar);
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
-(function($) {
+$(function() {
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
-            scrollTop: ($($anchor.attr('href')).offset().top - 50)
+            scrollTop: ($($anchor.attr('href')).offset().top-50)
         }, 1250, 'easeInOutExpo');
         event.preventDefault();
     });
-})(jQuery);
+});
 
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
@@ -39,7 +39,11 @@ $('.navbar-collapse ul li a').click(function() {
         duration: 1000,
         delay: 200
     });
-    sr.reveal('.sr-blog', {
+    sr.reveal('.sr-card', {
+        duration: 1000,
+        delay: 200
+    });
+    sr.reveal('.sr-contact', {
         duration: 600,
         scale: 0.3,
         distance: '0px'
