@@ -243,20 +243,18 @@ a:after {
 	color: white;
 } 
 
-.hero-text {
-	color: #2c3435;
-	border-bottom: 1px solid #2c3e50;
-	padding-bottom: 10px;
-	margin-bottom: 40px;
+#about .col-lg-5 {
+	margin-bottom: 30px;
 }
-
 #about h3 {
 	text-align: center;
 	color: #2c3435;
 	margin: 10px;
+	font-weight: 600;
 }
 #about p {
 	color: #2c3435;
+	font-size: 18px;
 }
 
 #about i {
@@ -423,4 +421,12 @@ sm {
 .desc span {
 	float: right;
 	font-size: 12px;
+}
+
+.hero-text {
+	color: #2c3435;
+	border-bottom: 1px solid #2c3e50;
+	padding-bottom: 10px;
+	margin-bottom: 40px;
+	text-align: center;
 }
